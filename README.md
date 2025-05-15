@@ -22,6 +22,22 @@ This project implements a system for real-time American Sign Language (ASL) gest
 * `Logs/`: (Directory to be created by `model-training.py`) Stores TensorBoard logs during model training.
 * `action.h5`: (File created by `model-training.py`) The saved trained Keras model.
 
+## 📸 Screenshots / Demonstration
+
+Here's a glimpse of the project in action:
+
+**1. Data Collection (`data-collection.py`)**
+*Collecting sequences of keypoints for defined ASL gestures.*
+![Data Collection Process](preview/data-collection.png)
+
+**2. Model Training (`model-training.py`)**
+*Monitoring the LSTM model training, for example, using TensorBoard or observing terminal output.*
+![Model Training Progress](preview/model-training.png)
+
+**3. Real-Time Gesture Prediction (`gesture-prediction.py`)**
+*The system recognizing an ASL gesture from the live webcam feed.*
+![Real-time Gesture Prediction](preview/gesture_prediction.gif)
+
 ## ✅ Prerequisites
 
 * Python 3.x

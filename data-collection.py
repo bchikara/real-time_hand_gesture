@@ -5,7 +5,7 @@ from config import ACTIONS, DATA_PATH, SEQUENCE_LENGTH
 from mediapipe_detection import mediapipe_detection, extract_keypoints, draw_styled_landmarks, mp_holistic
 
 def collect_data():
-    cap = cv2.VideoCapture(1)
+    cap = cv2.VideoCapture(0)
     # Set mediapipe model 
     with mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=0.5) as holistic:
         

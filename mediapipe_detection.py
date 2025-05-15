@@ -47,7 +47,7 @@ def draw_styled_landmarks(image, results):
 # Function for capturing live video stream and showcasing landmarks
 def capture_video():
     # Set up video capture from default camera (1)
-    cap = cv2.VideoCapture(1)
+    cap = cv2.VideoCapture(0)
 
     # Set up MediaPipe holistic model
     with mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=0.5) as holistic:

@@ -18,7 +18,7 @@ def prob_viz(res, actions, input_frame, colors):
     return output_frame
 
 def predict_gesture():
-    cap = cv2.VideoCapture(1)
+    cap = cv2.VideoCapture(0)
     sequence = []
     sentence = []
     predictions = []
